@@ -1,0 +1,30 @@
+body {
+    font-size: 1rem;
+}
+input {
+    margin: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+input:focus {
+    outline: 0;
+}
+h1, h2 {
+    font-weight: 400;
+}
+button {
+    cursor: pointer;
+    background-color: powderblue;
+    border: 1.75px solid black;
+    border-radius: 3px;
+    margin: 5px;
+}
+button:hover {
+    background-color: lightblue;
+}
+button:active {
+    background-color: skyblue;
+}
+label, button, br {
+    user-select: none;
+}
