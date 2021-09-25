@@ -1,7 +1,7 @@
 {
   "name": "Blacklist Pages",
   "description": "Set your own filters on what pages should be blocked or not.",
-  "version": "1.0",
+  "version": "0.0.0.1",
   "manifest_version": 3,
   "background": {
     "service_worker": "background.js"
