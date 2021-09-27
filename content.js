@@ -25,7 +25,7 @@ chrome.storage.sync.get(["urls", "useRegex"], ({ urls, useRegex }) => {
         document.querySelector("#_openOptionsPage").addEventListener("click",
             (event) => {
                 event.preventDefault();
-                chrome.runtime.sendMessage({message: "buttonClicked"}, () => {});
+                chrome.runtime.sendMessage({message: "optionsPage"}, () => {});
             }
         );
         document.close();
