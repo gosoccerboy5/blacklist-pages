@@ -13,17 +13,16 @@ h1, h2 {
     font-weight: 400;
 }
 button {
+    background-color: #06d713;
+    border: none;
     cursor: pointer;
-    background-color: powderblue;
-    border: 1.75px solid black;
-    border-radius: 3px;
-    margin: 5px;
+    border-radius: 5px;
+    height: 30px;
+    transition-duration: 150ms;
 }
-button:hover {
-    background-color: lightblue;
-}
+
 button:active {
-    background-color: skyblue;
+    background-color: green;
 }
 label, button, br {
     user-select: none;
