@@ -7,14 +7,14 @@ chrome.runtime.onInstalled.addListener(() => {
     hasSetPassword: false,
   });
   chrome.tabs.create({
-    url:  `chrome-extension://${chrome.runtime.id}/options.html`
+    url:  `chrome-extension://${chrome.runtime.id}/web/options.html`
   }, null);
 });
 
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   if (request.message == 'optionsPage') {
     chrome.tabs.create({
-      url:  `chrome-extension://${chrome.runtime.id}/options.html`
+      url:  `chrome-extension://${chrome.runtime.id}/web/options.html`
     }, null);
   }
 });
@@ -23,7 +23,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   if (request.message == 'setPasswordPage') {
     chrome.tabs.create({
-      url:  `chrome-extension://${chrome.runtime.id}/setPassword.html`
+      url:  `chrome-extension://${chrome.runtime.id}/web/setPassword.html`
     }, null);
   }
 });
